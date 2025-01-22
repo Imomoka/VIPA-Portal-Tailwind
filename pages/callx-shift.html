@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callx Booking Calendar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-gold flex justify-center items-center min-h-screen">
+
+        <!-- NPN Input Screen -->
+    <!-- <div id="npn-screen" class="flex flex-col items-center p-8 border border-gold rounded-md shadow-md">
+        <h1 class="text-2xl mb-4">Enter Your NPN</h1>
+        <input type="text" id="npn-input" class="p-2 border border-gold text-black rounded mb-2" placeholder="Enter NPN">
+        <button id="submit-npn" class="bg-gold text-black px-4 py-2 rounded">Submit</button>
+        <p id="npn-error" class="text-red-500 text-sm mt-2 hidden">Invalid NPN!</p>
+    </div> -->
+
+
+    <div class="w-full max-w-full mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
+    <div class="relative flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
+    <div class="relative">
+      <a class="block shadow-xl rounded-2xl">
+        <img src="../assets/img/vipa-logo.png" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" />
+      </a>
+    </div>
+    <div class="flex-auto px-1 pt-6">
+      <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-to-tl from-gray-900 to-slate-800 text-sm bg-clip-text">CallX Booking</p>
+      <a href="javascript:;">
+        <h5>VIPA Portal</h5>
+      </a>
+      <p class="mb-6 leading-normal text-sm">Please type your NPN to access the page.</p>
+      <div class="flex items-center justify-between">
+        <input type="text" id="npn-input" class="p-2 border border-gold text-black rounded mb-2" placeholder="Enter NPN">
+        <button id="submit-npn" type="button" class="inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-xs hover:scale-102 active:shadow-soft-xs tracking-tight-soft border-fuchsia-500 text-fuchsia-500 hover:border-fuchsia-500 hover:bg-transparent hover:text-fuchsia-500 hover:opacity-75 hover:shadow-none active:bg-fuchsia-500 active:text-white active:hover:bg-transparent active:hover:text-fuchsia-500">Submit</button>
+        
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Booking Calendar Screen -->
+    <div id="calendar-screen" class="hidden flex flex-col items-center">
+        <h1 class="text-2xl my-4">Select a Date</h1>
+        <div id="calendar" class="grid grid-cols-7 gap-2"></div>
+        <div id="booking-form" class="hidden mt-4 p-4 bg-black border border-gold rounded">
+            <h2 id="selected-date" class="text-lg"></h2>
+            <div class="flex gap-4 my-2">
+                <button class="shift-btn border border-gold px-4 py-2 rounded" data-shift="AM">AM</button>
+                <button class="shift-btn border border-gold px-4 py-2 rounded" data-shift="PM">PM</button>
+            </div>
+            <button id="confirm-booking" class="bg-gold text-black px-4 py-2 rounded">Confirm</button>
+            <p id="confirmation-msg" class="mt-2 text-sm hidden"></p>
+        </div>
+    </div>
+
+    <script src="../assets/js/calendar.js" defer></script>
+    <!-- main script file  -->
+    <script src="../assets/js/soft-ui-dashboard-tailwind.js?v=1.0.5" async></script>
+</body>
+</html>

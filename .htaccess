@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteRule ^billing$ pages/billing.html [L]
+RewriteRule ^dashboard$ pages/dashboard.html [L]
+RewriteRule ^profile$ pages/profile.html [L]
+RewriteRule ^rtl$ pages/rtl.html [L]
+RewriteRule ^sign-in$ pages/sign-in.html [L]
+RewriteRule ^sign-up$ pages/sign-up.html [L]
+RewriteRule ^tables$ pages/tables.html [L]
+RewriteRule ^virtual-reality$ pages/virtual-reality.html [L]
+
+# Redirect root to index.html
+RewriteRule ^$ index.html [L]
+
